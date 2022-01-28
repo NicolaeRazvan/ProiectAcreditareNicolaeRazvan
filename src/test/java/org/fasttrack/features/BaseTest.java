@@ -45,6 +45,15 @@ public class BaseTest {
     @Steps
     protected AccountDetailsSteps accountDetailsSteps;
 
+    @Steps
+    protected BaseSteps baseSteps;
+
+    @Steps
+    protected AdminLoginSteps adminLoginSteps;
+
+    @Steps
+    protected AdminProductSteps adminProductSteps;
+
 
 
 }

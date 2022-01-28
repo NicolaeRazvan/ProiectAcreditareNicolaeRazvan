@@ -9,5 +9,7 @@ public class EnvConstants {
     public static final String USER_EMAIL = "email18@gmail.com";
     public static final String USER_PASS = "!Parola123";
     public static final String USER_NAME = "email18";
+    public static final String USER_EMAIL_ADMIN = "admin";
+    public static final String USER_PASS_ADMIN = "parola11";
 
 }

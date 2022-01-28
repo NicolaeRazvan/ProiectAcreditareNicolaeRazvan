@@ -13,6 +13,8 @@ public class BaseSteps extends ScenarioSteps {
     public CartPage cartPage;
     public CheckoutPage checkoutPage;
     public AccountDetailsPage accountDetailsPage;
+    public AdminLoginPage adminLoginPage;
+    public AdminPage adminPage;
 
 
 
@@ -25,6 +27,11 @@ public class BaseSteps extends ScenarioSteps {
     public void navigateToHomePage() {
         getDriver().get(EnvConstants.BASE_URL);
 
+    }
+
+    @Step
+    public void navigateBackAPage(){
+        getDriver().navigate().back();
     }
 
 }

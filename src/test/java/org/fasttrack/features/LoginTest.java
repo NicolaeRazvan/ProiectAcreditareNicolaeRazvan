@@ -44,4 +44,10 @@ public class LoginTest extends BaseTest{
         loginSteps.completeLogin();
         loginSteps.noPassAssert();
     }
+
+    @Test
+    public void doAdminLogin(){
+        baseSteps.navigateToAdminHomePage();
+        adminLoginSteps.doAdminLogin(EnvConstants.USER_EMAIL_ADMIN,EnvConstants.USER_PASS_ADMIN);
+    }
 }

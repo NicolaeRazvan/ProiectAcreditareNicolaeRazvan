@@ -37,4 +37,14 @@ public class SearchTest extends BaseTest{
         searchSteps.checkPrice();
         searchSteps.priceDescending();
     }
+
+    @Test
+    public void searchNewProductFromAdmin(){
+        baseSteps.navigateToAdminHomePage();
+        adminLoginSteps.doAdminLogin(EnvConstants.USER_EMAIL_ADMIN,EnvConstants.USER_PASS_ADMIN);
+        adminProductSteps.clickAddNewProduct();
+        adminProductSteps.nameAndPostNewProduct("AdminShirt");
+        baseSteps.navigateToHomePage();
+        searchSteps.doSearch("AdminShirt");
+    }
 }
