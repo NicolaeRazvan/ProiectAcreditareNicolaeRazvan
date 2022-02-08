@@ -8,9 +8,8 @@ public class RegisterTest extends BaseTest{
     @Test
     public void registerWithValidCredentials(){
         loginSteps.navigateToLoginPage();
-        registerSteps.doRegister("emailregister@gmail.com","!Password4321");
+        registerSteps.doRegister("emailregister@gmail.com","!Password43210");
         registerSteps.completeRegister();
-        loginSteps.checkUserIsLoggedIn(EnvConstants.USER_NAME);
     }
 
     @Test
